@@ -1,7 +1,7 @@
 FROM        centos:latest
-MAINTAINER  Karloku Sang <karloku@loku.it>
+MAINTAINER  qinghai <qinghai@gmail.com>
 
-COPY        mongodb-org-3.0.repo /etc/yum.repos.d/
+COPY        mongodb-org-3.6.repo /etc/yum.repos.d/
 RUN         yum update -y && yum install -y mongodb-org
 
 # mkdirs
