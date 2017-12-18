@@ -2,6 +2,7 @@
 
 # config svr
 mongod  --configsvr                                 \
+        --replSet rss                               \
         --dbpath  /data/configdb                    \
         --logpath /data/configdb/log/configsvr.log  \
         --port 27000 --fork
