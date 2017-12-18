@@ -10,7 +10,7 @@ docker build -t noteon/mongos-docker .
 
 ```
 # run the docker (for example, at 29034)
-docker run --name mongos -p 29036:27017 -d noteon/mongos-docker
+docker run --name mongos -p 29034:27017 -d noteon/mongos-docker
 
 # add the shards
 mongo --port 29034 --eval "printjson(sh.addShard('localhost:29001'));"
